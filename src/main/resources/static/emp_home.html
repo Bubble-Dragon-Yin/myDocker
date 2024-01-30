@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #ccffcc;
+        }
+
+        .logo-container img {
+            height: 50px;
+        }
+
+        .logo-container span {
+            margin-left: 10px;
+            font-size: 24px;
+        }
+
+        .user-controls a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: #ddd;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            padding: 10px 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .carousel {
+            width: 100%;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .carousel-image {
+            max-width: 50%;
+            max-height: 300px;
+            display: none;
+        }
+
+        .carousel-image.active {
+            display: inline;
+        }
+
+        .info-section {
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .info-section h2 {
+            margin: 0 0 10px 0;
+        }
+
+        .section-title {
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .video-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .video-container iframe {
+            width: 560px;
+            height: 315px;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo-container">
+
+    </div>
+    <div class="user-controls">
+        <a href="profile.html">Profile</a>
+        <a href="/logout">Logout</a>
+    </div>
+</header>
+<nav>
+    <ul>
+        <li><a href="/emp_home.html">Home</a></li>
+        <li><a href="/user/news/list">News</a></li>
+        <li><a href="/user/competition/list">Join Event</a></li>
+    </ul>
+</nav>
+<div class="carousel">
+    <img src="./images/png%201.png" alt="Image 1" class="carousel-image">
+    <img src="./images/png%202.png" alt="Image 2" class="carousel-image">
+    <img src="./images/jepg%201.jpeg" alt="Image 3" class="carousel-image">
+    <img src="./images/jepg%202.jpeg" alt="Image 4" class="carousel-image">
+</div>
+<div class="info-section">
+    <h2>Understanding Plastic Recycling</h2>
+    <p>Delve into the world of plastic recycling and discover its pivotal role in environmental conservation. This insightful video sheds light on the entire recycling process, highlighting the significant impact of recycling on resource conservation and sustainability.</p>
+</div>
+<h2 class="section-title">About Us</h2>
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/8hiWJJsnP2Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<script>
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.carousel-image');
+    const totalImages = images.length;
+
+    images[currentIndex].classList.add('active');
+
+    setInterval(() => {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % totalImages;
+        images[currentIndex].classList.add('active');
+    }, 5000);
+</script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    <link rel="stylesheet" href="/css/style.css">-->
+<!--    <link rel="stylesheet" href="/css/initial.css">-->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        #main-view{
+            border: red solid 1px;
+            display: block;
+            height: auto;
+            width: auto;
+
+        }
+        #main-form-view{
+            border: #28a745 solid 1px;
+            display: block;
+            height: auto;
+            width: 449px;
+            padding: 60px;
+            margin: auto;
+
+        }
+        .banner{
+            background-color: #D75F28;
+        }
+
+
+        .nav{
+            padding-top: 50px;
+            display: block;
+            height: auto;
+            width: auto;
+            background-color: #F1F1F1FF;
+        }
+
+        .container {
+            border: blue solid 1px;
+            max-width: 940px;
+            max-height: fit-content;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: auto;
+            /*margin-top: 20px;*/
+
+        }
+
+
+        h2 {
+            color: black;
+            color: #17202A;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
+        }
+
+
+        .custom-image {
+            width: 800px;
+            height: 300px;
+        }
+
+        .card-deck {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+            border: red solid 1px;
+            box-sizing: border-box;
+        }
+
+        .card-body:hover {
+            transform: scale(1.05);
+        }
+        .card-body {
+            padding: 20px;
+            text-align: center;
+        }
+        .btn {
+            display: block;
+            width: 90px;
+            height: 18px;
+            padding: 10px;
+            /* margin-top: 10px; */
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            transition: box-shadow 0.5s ease; /* 添加过渡效果，让阴影有平滑的变化 */
+        }
+
+        .btn-yellow {
+            background-color: #FFC300;
+        }
+
+        .btn-blue {
+            background-color: #007bff;
+        }
+
+        .btn-red {
+            background-color: #dc3545;
+        }
+
+        .btn-stone {
+            background-color: #17a2b8;
+        }
+
+        .btn-success {
+            background-color: #28a745;
+        }
+
+        .btn-plush {
+            background-color:  #0D3869;
+        }
+        .btn-orange {
+            background-color: #D75F28;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+
+
+        <div class="card-deck">
+            <div class="card-body">
+                <a href="/" class="btn btn-blue">Home</a>
+            </div>
+
+
+
+            <div class="card-body">
+                <a href="/news/list" class="btn btn-blue">News </a>
+                <span sec:authentication="name"></span>
+            </div>
+
+<!--            <div class="card-body">-->
+<!--                <a href="/event/list" class="btn btn-blue">My Profile</a>-->
+<!--            </div>-->
+
+            <div class="card-body">
+                <a href="/login/form" class="btn btn-blue">Login</a>
+            </div>
+            <div class="card-body">
+                <a href="/emp_home.html" class="btn btn-blue">Dashboard</a>
+            </div>
+
+        </div>
+        <div id="main-view">
+            <img src="./images/OAsystem.png" alt="" class="custom-image">
+        </div>
+    </div>
+
+</body>
+</html>
