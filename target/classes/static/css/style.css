@@ -1,0 +1,154 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#main-view{
+    border: red solid 1px;
+    display: block;
+    height: auto;
+    width: auto;
+
+}
+#main-form-view{
+    border: #28a745 solid 1px;
+    display: block;
+    height: auto;
+    width: 449px;
+    padding: 60px;
+    margin: auto;
+
+}
+.banner{
+    background-color: #D75F28;
+}
+
+
+.nav{
+    padding-top: 50px;
+    display: block;
+    height: auto;
+    width: auto;
+    background-color: #F1F1F1FF;
+}
+
+.container {
+    border: blue solid 1px;
+    max-width: 940px;
+    max-height: fit-content;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    /*margin-top: 20px;*/
+
+}
+
+
+h2 {
+    color: black;
+    color: #17202A;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
+}
+
+
+.custom-image {
+    width: 800px;
+    height: 300px;
+}
+
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    border: red solid 1px;
+    box-sizing: border-box;
+}
+
+.card-body:hover {
+    transform: scale(1.05);
+}
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+.btn {
+    display: block;
+    width: 90px;
+    height: 18px;
+    padding: 10px;
+    /* margin-top: 10px; */
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    transition: box-shadow 0.5s ease; /* 添加过渡效果，让阴影有平滑的变化 */
+}
+
+.btn-yellow {
+    background-color: #FFC300;
+}
+
+.btn-blue {
+    background-color: #007bff;
+}
+
+.btn-red {
+    background-color: #dc3545;
+}
+
+.btn-stone {
+    background-color: #17a2b8;
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+.btn-plush {
+    background-color:  #0D3869;
+}
+.btn-orange {
+    background-color: #D75F28;
+}
+
+
+.table-styles {
+    width: 100%;
+    max-width: 100%; /* Ensure the table doesn't exceed its container's width */
+    border-collapse: collapse;
+}
+
+.table-styles th,
+.table-styles td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table-styles th {
+    background-color: #4caf50;
+    color: white;
+}
+
+.table-styles tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-styles tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table-styles a {
+    text-decoration: none;
+    color: #215db0;
+    /*margin-right: 12px;*/
+    padding-right: 12px;
+}
+
